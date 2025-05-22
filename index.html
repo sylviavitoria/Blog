@@ -9,32 +9,61 @@
 
     <link rel="stylesheet" href="src/index.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 
-
-    <title>Blog</title>
+    <title>PetShop</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <h1 class="logo-text"><span>Blog</span> DBServer</h1>
+            <h1 class="logo-text"><span>Pet</span>Shop</h1>
         </div>
-        <i class="fa fa-bars menu"></i>
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li>
-                <a href="#">Sylvia Vitoria</a>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#" class="logout">Logout</a></li>
-                </ul>
-            </li>
-
+        <i class="fa fa-bars menu" id="menuToggle"></i>
+        <ul class="nav" id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Criar post</a></li>
         </ul>
     </header>
+
+    <div class="content">
+        <div class="posts-section">
+            <div class="post">
+                <h2 class="post-title">Como cuidar do seu filhote nos primeiros meses</h2>
+                <div class="post-content">
+                    <p>Ter um filhote em casa é uma experiência incrível, mas exige cuidados específicos. Neste post,
+                        vamos abordar como alimentar, vacinar e socializar seu pet nos primeiros meses de vida.</p>
+                    <p>Você também vai aprender dicas práticas para ensinar comandos básicos e adaptar o ambiente da
+                        casa para o novo morador...</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2 class="post-title">10 curiosidades sobre gatos que você precisa saber</h2>
+                <div class="post-content">
+                    <p>Gatos são animais misteriosos e cheios de personalidade. Neste artigo, descubra fatos curiosos
+                        sobre o comportamento felino que talvez você ainda não conheça.</p>
+                    <p>Vamos falar sobre ronronar, hábitos noturnos, e como os gatos demonstram carinho pelos seus
+                        tutores...</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2 class="post-title">Alimentação natural para cães: vale a pena?</h2>
+                <div class="post-content">
+                    <p>A alimentação natural tem ganhado espaço entre os tutores de cães. Mas será que ela é realmente
+                        melhor que a ração industrializada?</p>
+                    <p>Neste post, explicamos os prós e contras, cuidados com a dieta e quando consultar um veterinário
+                        nutricionista...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Criado por Sylvia</p>
+    </footer>
 </body>
 
 </html>

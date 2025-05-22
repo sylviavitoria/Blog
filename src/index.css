@@ -1,15 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   padding: 0%;
   margin: 0%;
-  background: white;
+  background: #f8f9fa;
   font-family: 'Lora', serif;
+  line-height: 1.5;
 }
+
 header {
   background: #011f49;
   height: 66px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header * {
@@ -40,13 +44,111 @@ header ul {
 
 header ul li {
   float: left;
+  position: relative;
 }
+
 header ul li a {
   display: block;
   padding: 21px;
   font-size: 1.1em;
   text-decoration: none;
 }
+
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0;
+  width: 180px;
+  display: none;
+  z-index: 88888;
+  background: #011f49;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  width: 100%;
+}
+
+header ul li ul li a {
+  padding: 10px;
+}
+
 header .menu {
   display: none;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.content {
+  width: 90%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.posts-section {
+  width: 70%;
+  float: left;
+}
+
+.post {
+  background: white;
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.post-info {
+  margin: 10px 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.post-info span {
+  margin-right: 15px;
+}
+
+.sidebar {
+  width: 27%;
+  float: right;
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.categories li:last-child {
+  border-bottom: none;
+}
+
+.categories a {
+  color: #333;
+  text-decoration: none;
+}
+
+.categories a:hover {
+  color: #5d9cec;
+}
+
+footer {
+  background: #011f49;
+  color: white;
+  text-align: center;
+  padding: 22px 0;
+  margin-top: 25px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+  margin: 5px 0;
 }
