@@ -112,6 +112,20 @@ header .menu {
   margin-right: 15px;
 }
 
+.read-more {
+  display: inline-block;
+  background: #011f49;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  background: #34588d;
+}
+
 .sidebar {
   width: 27%;
   float: right;
