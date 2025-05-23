@@ -1,13 +1,98 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="src/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Mundo Pet</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>Mundo</span>Pet</h1>
+        </div>
+        <i class="fa fa-bars menu" id="menuToggle"></i>
+        <ul class="nav" id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Criar post</a></li>
+        </ul>
+    </header>
+
+    <div class="featured-image">
+        <div class="image-container">
+            <img src="src/assets/pets-foto.jpg" alt="Banner de animais de estimação">
+            <div class="image-text">
+                <h2>Bem-vindo ao Blog de Pets</h2>
+                <p>O Blog DBPets é dedicado a compartilhar conhecimentos sobre o mundo dos animais de estimação. Aqui
+                    você encontra dicas de cuidados, curiosidades, alimentação e tudo o que envolve o bem-estar dos seus
+                    pets.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="posts-section">
+            <div class="post">
+                <h2 class="post-title">Como cuidar do seu filhote nos primeiros meses</h2>
+                <div class="post-content">
+                    <p>Ter um filhote em casa é uma experiência incrível, mas exige cuidados específicos. Neste post,
+                        vamos abordar como alimentar, vacinar e socializar seu pet nos primeiros meses de vida.</p>
+                    <p>Você também vai aprender dicas práticas para ensinar comandos básicos e adaptar o ambiente da
+                        casa para o novo morador...</p>
+                </div>
+                <a href="#" class="read-more">Ler mais</a>
+            </div>
+
+            <div class="post">
+                <h2 class="post-title">10 curiosidades sobre gatos que você precisa saber</h2>
+                <div class="post-content">
+                    <p>Gatos são animais misteriosos e cheios de personalidade. Neste artigo, descubra fatos curiosos
+                        sobre o comportamento felino que talvez você ainda não conheça.</p>
+                    <p>Vamos falar sobre ronronar, hábitos noturnos, e como os gatos demonstram carinho pelos seus
+                        tutores...</p>
+                </div>
+                <a href="#" class="read-more">Ler mais</a>
+            </div>
+
+            <div class="post">
+                <h2 class="post-title">Alimentação natural para cães: vale a pena?</h2>
+                <div class="post-content">
+                    <p>A alimentação natural tem ganhado espaço entre os tutores de cães. Mas será que ela é realmente
+                        melhor que a ração industrializada?</p>
+                    <p>Neste post, explicamos os prós e contras, cuidados com a dieta e quando consultar um veterinário
+                        nutricionista...</p>
+                </div>
+                <a href="#" class="read-more">Ler mais</a>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Categorias</h3>
+                <ul class="categories">
+                    <li><a href="#">Mamíferos</a></li>
+                    <li><a href="#">Aves</a></li>
+                    <li><a href="#">Répteis</a></li>
+                    <li><a href="#">Anfíbios</a></li>
+                    <li><a href="#">Peixes</a></li>
+                    <li><a href="#">Insetos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Criado por Sylvia</p>
+    </footer>
+</body>
+
 </html>
